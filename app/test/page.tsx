@@ -6,15 +6,18 @@ import { questions, sections } from '@/data/questions';
 import type { Question } from '@/data/questions';
 
 const TEST_DURATION = 60 * 60 * 1000; // 1 heure en millisecondes
+const QUESTION_TIMEOUT = 30 * 1000; // 30 secondes par question
 
 export default function TestPage() {
   const router = useRouter();
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
   const [answers, setAnswers] = useState<{ [key: string]: number }>({});
   const [timeRemaining, setTimeRemaining] = useState(TEST_DURATION);
+  const [questionTimeRemaining, setQuestionTimeRemaining] = useState(QUESTION_TIMEOUT);
   const [isFullscreen, setIsFullscreen] = useState(false);
   const [testStarted, setTestStarted] = useState(false);
   const [visibilityWarning, setVisibilityWarning] = useState(false);
+  const [timeoutWarning, setTimeoutWarning] = useState(false);
 
   const handleFinishTest = useCallback(() => {
     const correctAnswers = questions.filter(
@@ -141,6 +144,56 @@ export default function TestPage() {
     return () => window.removeEventListener('keydown', handleKeyDown);
   }, [testStarted]);
 
+  // Timer pour chaque question (30 secondes)
+  useEffect(() => {
+    if (!testStarted) return;
+
+    const currentQuestion = questions[currentQuestionIndex];
+    if (!currentQuestion) return;
+
+    // Réinitialiser le timer quand on change de question
+    setQuestionTimeRemaining(QUESTION_TIMEOUT);
+    setTimeoutWarning(false);
+
+    // Vérifier si la question actuelle a déjà une réponse
+    const hasAnswer = answers[currentQuestion.id] !== undefined;
+
+    // Si la question a déjà une réponse, ne pas démarrer le timer
+    if (hasAnswer) {
+      return;
+    }
+
+    const interval = setInterval(() => {
+      setQuestionTimeRemaining((prev) => {
+        if (prev <= 1000) {
+          // Timeout atteint - annuler le test
+          setTimeoutWarning(true);
+          setTimeout(() => {
+            router.push('/');
+          }, 2000);
+          return 0;
+        }
+        return prev - 1000;
+      });
+    }, 1000);
+
+    return () => clearInterval(interval);
+  }, [testStarted, currentQuestionIndex, answers, router]);
+
+  // Réinitialiser le timer de la question quand l'utilisateur répond
+  useEffect(() => {
+    if (!testStarted) return;
+
+    const currentQuestion = questions[currentQuestionIndex];
+    if (!currentQuestion) return;
+
+    const hasAnswer = answers[currentQuestion.id] !== undefined;
+    if (hasAnswer) {
+      setQuestionTimeRemaining(QUESTION_TIMEOUT);
+      setTimeoutWarning(false);
+    }
+  }, [answers, currentQuestionIndex, testStarted]);
+
   const formatTime = (ms: number) => {
     const totalSeconds = Math.floor(ms / 1000);
     const hours = Math.floor(totalSeconds / 3600);
@@ -154,6 +207,9 @@ export default function TestPage() {
       ...prev,
       [questionId]: answerIndex,
     }));
+    // Réinitialiser le timer quand l'utilisateur répond
+    setQuestionTimeRemaining(QUESTION_TIMEOUT);
+    setTimeoutWarning(false);
   };
 
   const handleNext = () => {
@@ -171,11 +227,12 @@ export default function TestPage() {
     }
   };
 
-  const handleCancelTest = () => {
+  const handleCancelTest = useCallback(() => {
     if (confirm('Vous avez quitté le test. Le test sera annulé. Continuer ?')) {
       router.push('/');
     }
-  };
+  }, [router]);
+
 
   const currentQuestion = questions[currentQuestionIndex];
   const currentSection = currentQuestion?.section;
@@ -225,6 +282,24 @@ export default function TestPage() {
     );
   }
 
+  if (timeoutWarning) {
+    return (
+      <div style={{ 
+        minHeight: '100vh', 
+        display: 'flex', 
+        alignItems: 'center', 
+        justifyContent: 'center',
+        background: 'var(--danger-color)',
+        color: 'white'
+      }}>
+        <div style={{ textAlign: 'center', padding: '2rem' }}>
+          <h1 style={{ fontSize: '2.5rem', marginBottom: '1rem' }}>⏱️ Timeout</h1>
+          <p style={{ fontSize: '1.5rem' }}>Vous avez dépassé 30 secondes sans répondre. Le test est annulé.</p>
+        </div>
+      </div>
+    );
+  }
+
   return (
     <div style={{ 
       minHeight: '100vh', 
@@ -268,6 +343,19 @@ export default function TestPage() {
               {currentQuestionIndex + 1} / {questions.length}
             </span>
           </div>
+          {answers[currentQuestion?.id] === undefined && (
+            <div>
+              <strong style={{ color: 'var(--text-secondary)' }}>Temps question:</strong>
+              <span style={{ 
+                fontSize: '1.5rem', 
+                fontWeight: 'bold',
+                color: questionTimeRemaining < 5000 ? 'var(--danger-color)' : 'var(--warning-color)',
+                marginLeft: '0.5rem'
+              }}>
+                {Math.ceil(questionTimeRemaining / 1000)}s
+              </span>
+            </div>
+          )}
         </div>
       </div>
 
