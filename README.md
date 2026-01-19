@@ -19,7 +19,7 @@ Application Next.js pour évaluer les connaissances de base des étudiants avant
 - **Mode plein écran** pendant le test
 - **Compte à rebours** de 1 heure
 - **Détection de sortie** : le test est annulé si l'utilisateur quitte
-- **Scoring** : minimum 50% requis pour passer
+- **Scoring** : minimum 60% requis pour passer
 - **Résultats détaillés** avec affichage des bonnes réponses
 - **Possibilité de recommencer** tant que le score n'est pas atteint
 

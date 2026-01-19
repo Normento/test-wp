@@ -45,7 +45,7 @@ export default function Home() {
               <strong>Type :</strong> Questions à choix multiple
             </li>
             <li style={{ padding: '0.5rem 0', fontSize: '1.1rem' }}>
-              <strong>Score minimum requis :</strong> 50%
+              <strong>Score minimum requis :</strong> 60%
             </li>
           </ul>
         </div>
@@ -64,7 +64,7 @@ export default function Home() {
             <li style={{ padding: '0.25rem 0' }}>• Le test se déroulera en mode plein écran</li>
             <li style={{ padding: '0.25rem 0' }}>• Si vous quittez le test, il sera annulé</li>
             <li style={{ padding: '0.25rem 0' }}>• Vous avez 1 heure pour terminer</li>
-            <li style={{ padding: '0.25rem 0' }}>• Vous pouvez recommencer tant que vous n'avez pas obtenu 50%</li>
+            <li style={{ padding: '0.25rem 0' }}>• Vous pouvez recommencer tant que vous n'avez pas obtenu 60%</li>
             <li style={{ padding: '0.25rem 0' }}>• Les résultats avec les bonnes réponses seront affichés à la fin</li>
           </ul>
         </div>
