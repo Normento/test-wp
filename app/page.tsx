@@ -45,7 +45,7 @@ export default function Home() {
               <strong>Type :</strong> Questions à choix multiple
             </li>
             <li style={{ padding: '0.5rem 0', fontSize: '1.1rem' }}>
-              <strong>Score minimum requis :</strong> 60%
+              <strong>Score minimum requis :</strong> 80%
             </li>
           </ul>
         </div>
