@@ -14,55 +14,55 @@ export const questions: Question[] = [
   {
     id: '1',
     section: 'Ordinateur et Téléphone',
-    question: "Qu'est-ce qu'un ordinateur ?",
+    question: 'Quelle est la différence fondamentale entre un ordinateur et un smartphone moderne ?',
     options: [
-      'Un appareil électronique capable de traiter des données',
-      'Un simple écran',
-      'Un clavier',
-      'Un logiciel'
+      'Les smartphones sont des ordinateurs miniaturisés avec des capacités similaires mais des interfaces différentes',
+      'Aucune différence, ce sont des appareils identiques',
+      'Les ordinateurs ne peuvent pas se connecter à Internet',
+      'Les smartphones n\'ont pas de processeur'
     ],
     correctAnswer: 0
   },
   {
     id: '2',
     section: 'Ordinateur et Téléphone',
-    question: 'Quel est le rôle principal d’un ordinateur ?',
+    question: 'Qu\'est-ce que la RAM dans un ordinateur ?',
     options: [
-      'Téléphoner',
-      'Traiter, stocker et afficher des informations',
-      'Se connecter uniquement à Internet',
-      'Imprimer'
+      'La mémoire de stockage permanente',
+      'La mémoire vive temporaire utilisée pour exécuter les programmes en cours',
+      'Le disque dur',
+      'Le processeur'
     ],
     correctAnswer: 1
   },
   {
     id: '3',
     section: 'Ordinateur et Téléphone',
-    question: "Qu'est-ce qu'un système d'exploitation ?",
+    question: 'Quelle est la fonction principale d\'un système d\'exploitation ?',
     options: [
-      'Un logiciel qui gère l’ordinateur',
-      'Un navigateur',
-      'Un fichier',
-      'Un antivirus'
+      'Gérer les ressources matérielles, fournir une interface utilisateur et permettre l\'exécution des applications',
+      'Exécuter uniquement les applications',
+      'Protéger contre les virus',
+      'Naviguer sur Internet'
     ],
     correctAnswer: 0
   },
   {
     id: '4',
     section: 'Ordinateur et Téléphone',
-    question: 'Quel est un système d’exploitation ?',
-    options: ['Windows', 'Google', 'Chrome', 'Facebook'],
-    correctAnswer: 0
+    question: 'iOS et Android sont des exemples de :',
+    options: ['Applications mobiles', 'Navigateurs web', 'Moteurs de recherche', 'Systèmes d\'exploitation mobiles'],
+    correctAnswer: 3
   },
   {
     id: '5',
     section: 'Ordinateur et Téléphone',
-    question: 'Android est :',
+    question: 'Qu\'est-ce qu\'un processeur (CPU) ?',
     options: [
-      'Un téléphone',
-      'Un système d’exploitation mobile',
-      'Une application',
-      'Un navigateur'
+      'Un périphérique de stockage',
+      'Le composant qui exécute les instructions et traite les données',
+      'Un logiciel système',
+      'Un type de mémoire'
     ],
     correctAnswer: 1
   },
@@ -73,52 +73,57 @@ export const questions: Question[] = [
   {
     id: '6',
     section: 'Fichiers et Dossiers',
-    question: "Qu'est-ce qu'un dossier ?",
+    question: 'Quelle est la différence entre un fichier et un dossier ?',
     options: [
-      'Un fichier',
-      'Un conteneur pour organiser les fichiers',
-      'Une application',
-      'Un disque dur'
+      'Aucune différence, ce sont des termes synonymes',
+      'Un dossier est un type de fichier spécial',
+      'Un fichier ne peut pas être ouvert',
+      'Un fichier contient des données, un dossier organise des fichiers et d\'autres dossiers'
     ],
-    correctAnswer: 1
+    correctAnswer: 3
   },
   {
     id: '7',
     section: 'Fichiers et Dossiers',
-    question: "Qu'est-ce qu'un fichier ?",
+    question: 'Qu\'est-ce qu\'une extension de fichier ?',
     options: [
-      'Un programme',
-      'Un ensemble de données enregistrées',
-      'Un dossier',
-      'Un système'
+      'La taille du fichier',
+      'Le nom du fichier',
+      'Les lettres après le point qui indiquent le type de fichier (ex: .txt, .jpg)',
+      'La date de création'
     ],
-    correctAnswer: 1
+    correctAnswer: 2
   },
   {
     id: '8',
     section: 'Fichiers et Dossiers',
-    question: 'Quelle extension correspond à une image ?',
-    options: ['.txt', '.jpg', '.exe', '.php'],
-    correctAnswer: 1
+    question: 'Quelle extension correspond à un fichier compressé ?',
+    options: ['.txt', '.jpg', '.html', '.zip ou .rar'],
+    correctAnswer: 3
   },
   {
     id: '9',
     section: 'Fichiers et Dossiers',
-    question: 'Quel fichier est une vidéo ?',
-    options: ['film.mp4', 'image.png', 'doc.txt', 'index.html'],
-    correctAnswer: 0
+    question: 'Qu\'est-ce qu\'un chemin de fichier (path) ?',
+    options: [
+      'La vitesse de transfert',
+      'L\'adresse complète indiquant l\'emplacement d\'un fichier dans la hiérarchie des dossiers',
+      'Le nom du fichier uniquement',
+      'La taille du fichier'
+    ],
+    correctAnswer: 1
   },
   {
     id: '10',
     section: 'Fichiers et Dossiers',
-    question: 'Pour naviguer entre dossiers on utilise :',
+    question: 'Qu\'est-ce qu\'un fichier système ?',
     options: [
-      'Le navigateur web',
-      'L’explorateur de fichiers',
-      'WordPress',
-      'Le BIOS'
+      'Un fichier créé par l\'utilisateur',
+      'Un fichier image',
+      'Un fichier texte',
+      'Un fichier essentiel au fonctionnement du système d\'exploitation'
     ],
-    correctAnswer: 1
+    correctAnswer: 3
   },
 
   // =======================
@@ -127,57 +132,62 @@ export const questions: Question[] = [
   {
     id: '11',
     section: 'Applications',
-    question: "Qu'est-ce qu'une application ?",
+    question: 'Quelle est la différence entre une application native et une application web ?',
     options: [
-      'Un dossier',
-      'Un programme réalisant des tâches',
-      'Un site web',
-      'Un fichier image'
+      'Aucune différence',
+      'L\'application native est installée localement et optimisée pour l\'OS, l\'application web fonctionne dans un navigateur',
+      'L\'application web est toujours plus rapide',
+      'L\'application native ne peut pas accéder à Internet'
     ],
     correctAnswer: 1
   },
   {
     id: '12',
     section: 'Applications',
-    question: 'Word est :',
-    options: ['Un navigateur', 'Un logiciel', 'Un site', 'Un système'],
-    correctAnswer: 1
+    question: 'Qu\'est-ce qu\'une application hybride ?',
+    options: [
+      'Une application qui ne fonctionne pas',
+      'Une application uniquement web',
+      'Une application qui combine des éléments natifs et web',
+      'Une application uniquement native'
+    ],
+    correctAnswer: 2
   },
   {
     id: '13',
     section: 'Applications',
-    question: 'Une application web fonctionne :',
+    question: 'Qu\'est-ce qu\'un framework d\'application ?',
     options: [
-      'Sans Internet',
-      'Dans un navigateur',
-      'Sur clé USB',
-      'Uniquement sur téléphone'
+      'Un logiciel complet',
+      'Un système d\'exploitation',
+      'Un ensemble d\'outils et de bibliothèques qui facilitent le développement d\'applications',
+      'Un navigateur web'
     ],
-    correctAnswer: 1
+    correctAnswer: 2
   },
   {
     id: '14',
     section: 'Applications',
-    question: 'WhatsApp Web est :',
+    question: 'Qu\'est-ce qu\'une API (Application Programming Interface) ?',
     options: [
-      'Une application installée',
-      'Une application web',
-      'Un logiciel PC',
-      'Un plugin'
+      'Une application utilisateur',
+      'Un système d\'exploitation',
+      'Une interface qui permet à des applications de communiquer entre elles',
+      'Un type de fichier'
     ],
-    correctAnswer: 1
+    correctAnswer: 2
   },
   {
     id: '15',
     section: 'Applications',
-    question: 'Play Store sert à :',
+    question: 'Qu\'est-ce qu\'un logiciel open-source ?',
     options: [
-      'Télécharger des applications',
-      'Naviguer sur Internet',
-      'Créer des fichiers',
-      'Installer Windows'
+      'Un logiciel payant',
+      'Un logiciel qui ne fonctionne pas',
+      'Un logiciel dont le code source est accessible et modifiable librement',
+      'Un logiciel uniquement pour entreprises'
     ],
-    correctAnswer: 0
+    correctAnswer: 2
   },
 
   // =======================
@@ -186,55 +196,60 @@ export const questions: Question[] = [
   {
     id: '16',
     section: 'Navigateur',
-    question: "Qu'est-ce qu'un navigateur ?",
+    question: 'Quelle est la différence entre un navigateur et un moteur de recherche ?',
     options: [
-      'Un moteur de recherche',
-      'Un logiciel pour afficher des sites web',
-      'Un serveur',
-      'Un site web'
+      'Aucune différence',
+      'Le moteur de recherche est un type de navigateur',
+      'Le navigateur ne peut pas afficher de pages',
+      'Le navigateur affiche les pages web, le moteur de recherche trouve des informations sur Internet'
     ],
-    correctAnswer: 1
+    correctAnswer: 3
   },
   {
     id: '17',
     section: 'Navigateur',
-    question: 'Quel est un navigateur ?',
-    options: ['Chrome', 'Google', 'Internet', 'WordPress'],
-    correctAnswer: 0
+    question: 'Qu\'est-ce qu\'un cookie dans un navigateur ?',
+    options: [
+      'Un virus',
+      'Un type de malware',
+      'Un petit fichier stocké par le site web pour mémoriser des informations',
+      'Un plugin'
+    ],
+    correctAnswer: 2
   },
   {
     id: '18',
     section: 'Navigateur',
-    question: 'Une URL est :',
+    question: 'Qu\'est-ce que le cache du navigateur ?',
     options: [
-      'Une application',
-      'Une adresse web',
-      'Un fichier',
-      'Un dossier'
+      'Un virus',
+      'Un stockage temporaire de fichiers pour accélérer le chargement des pages',
+      'Un type de cookie',
+      'Un plugin malveillant'
     ],
     correctAnswer: 1
   },
   {
     id: '19',
     section: 'Navigateur',
-    question: 'HTTPS signifie :',
+    question: 'Quelle est la différence entre HTTP et HTTPS ?',
     options: [
-      'Site sécurisé',
-      'Site lent',
-      'Site gratuit',
-      'Site hors ligne'
+      'Aucune différence',
+      'HTTP est plus rapide',
+      'HTTPS ne fonctionne pas',
+      'HTTPS chiffre les données échangées, HTTP ne le fait pas'
     ],
-    correctAnswer: 0
+    correctAnswer: 3
   },
   {
     id: '20',
     section: 'Navigateur',
-    question: 'Google est :',
+    question: 'Qu\'est-ce qu\'un bookmark (favori) ?',
     options: [
-      'Internet',
-      'Un navigateur',
-      'Un moteur de recherche',
-      'Un site hébergé'
+      'Un virus',
+      'Un cookie',
+      'Un lien sauvegardé pour accéder rapidement à une page web',
+      'Un plugin'
     ],
     correctAnswer: 2
   },
@@ -245,57 +260,62 @@ export const questions: Question[] = [
   {
     id: '21',
     section: 'Web',
-    question: "Qu'est-ce qu'un site web ?",
+    question: 'Quelle est la différence entre un site web statique et dynamique ?',
     options: [
-      'Une application PC',
-      'Un ensemble de pages accessibles sur Internet',
-      'Un logiciel',
-      'Un dossier'
+      'Aucune différence',
+      'Un site statique est toujours plus rapide',
+      'Un site dynamique ne peut pas changer',
+      'Un site statique affiche le même contenu pour tous, un site dynamique génère du contenu personnalisé'
     ],
-    correctAnswer: 1
+    correctAnswer: 3
   },
   {
     id: '22',
     section: 'Web',
-    question: 'Facebook est :',
+    question: 'Qu\'est-ce qu\'un serveur web ?',
     options: [
-      'Un site statique',
-      'Une application web',
-      'Un langage',
-      'Un serveur'
+      'Un navigateur',
+      'Un moteur de recherche',
+      'Un type de site web',
+      'Un ordinateur qui stocke et sert les fichiers d\'un site web aux visiteurs'
     ],
-    correctAnswer: 1
+    correctAnswer: 3
   },
   {
     id: '23',
     section: 'Web',
-    question: 'Un site responsive :',
+    question: 'Qu\'est-ce que le responsive design ?',
     options: [
-      'Fonctionne sur tous les écrans',
-      'Fonctionne seulement sur PC',
-      'Est payant',
-      'Est lent'
+      'Un design qui ne change jamais',
+      'Un design uniquement pour mobile',
+      'Un design lent',
+      'Un design qui s\'adapte automatiquement à la taille de l\'écran'
     ],
-    correctAnswer: 0
+    correctAnswer: 3
   },
   {
     id: '24',
     section: 'Web',
-    question: 'Un CMS sert à :',
+    question: 'Qu\'est-ce qu\'un CMS headless ?',
     options: [
-      'Coder sans Internet',
-      'Gérer un site sans coder',
-      'Créer un langage',
-      'Installer Windows'
+      'Un CMS sans interface',
+      'Un CMS qui ne fonctionne pas',
+      'Un CMS uniquement pour mobile',
+      'Un CMS où le frontend et le backend sont séparés'
     ],
-    correctAnswer: 1
+    correctAnswer: 3
   },
   {
     id: '25',
     section: 'Web',
-    question: 'WordPress est un :',
-    options: ['Framework', 'CMS', 'Langage', 'Serveur'],
-    correctAnswer: 1
+    question: 'Qu\'est-ce qu\'un framework web ?',
+    options: [
+      'Un site web complet',
+      'Un navigateur',
+      'Un ensemble d\'outils et de structures pour faciliter le développement web',
+      'Un serveur'
+    ],
+    correctAnswer: 2
   },
 
   // =======================
@@ -304,47 +324,57 @@ export const questions: Question[] = [
   {
     id: '26',
     section: 'HTML',
-    question: 'HTML signifie :',
+    question: 'Quelle est la différence entre HTML et XHTML ?',
     options: [
-      'HyperText Markup Language',
-      'High Text Modern Language',
-      'Home Tool Markup Language',
-      'Hyper Tool Language'
+      'Aucune différence',
+      'XHTML est un langage différent',
+      'HTML ne fonctionne plus',
+      'XHTML est une version plus stricte de HTML basée sur XML'
     ],
-    correctAnswer: 0
+    correctAnswer: 3
   },
   {
     id: '27',
     section: 'HTML',
-    question: 'HTML sert à :',
+    question: 'Qu\'est-ce qu\'un élément sémantique en HTML5 ?',
     options: [
-      'Styliser',
-      'Structurer une page',
-      'Animer',
-      'Stocker des données'
+      'Un élément qui décrit sa signification plutôt que son apparence (ex: <article>, <nav>)',
+      'Un élément décoratif',
+      'Un élément invisible',
+      'Un élément obsolète'
     ],
-    correctAnswer: 1
+    correctAnswer: 0
   },
   {
     id: '28',
     section: 'HTML',
-    question: 'Balise titre principale :',
-    options: ['<h1>', '<p>', '<div>', '<span>'],
-    correctAnswer: 0
+    question: 'Quelle est la différence entre <div> et <span> ?',
+    options: [
+      'Aucune différence',
+      '<span> est un élément de bloc',
+      '<div> ne peut pas contenir de texte',
+      '<div> est un élément de bloc, <span> est un élément inline'
+    ],
+    correctAnswer: 3
   },
   {
     id: '29',
     section: 'HTML',
-    question: 'Créer un lien :',
-    options: ['<a>', '<link>', '<url>', '<href>'],
+    question: 'Qu\'est-ce qu\'un attribut HTML ?',
+    options: [
+      'Une propriété qui fournit des informations supplémentaires sur un élément',
+      'Un élément',
+      'Un style CSS',
+      'Un script JavaScript'
+    ],
     correctAnswer: 0
   },
   {
     id: '30',
     section: 'HTML',
-    question: 'Afficher une image :',
-    options: ['<img>', '<photo>', '<image>', '<pic>'],
-    correctAnswer: 0
+    question: 'Quelle balise HTML5 est utilisée pour du contenu audio ?',
+    options: ['<sound>', '<music>', '<mp3>', '<audio>'],
+    correctAnswer: 3
   },
 
   // =======================
@@ -353,57 +383,62 @@ export const questions: Question[] = [
   {
     id: '31',
     section: 'CSS',
-    question: 'CSS signifie :',
+    question: 'Qu\'est-ce que la spécificité en CSS ?',
     options: [
-      'Creative Style Sheet',
-      'Cascading Style Sheets',
-      'Computer Style Sheets',
-      'Color Style System'
+      'La règle qui détermine quelle déclaration CSS est appliquée quand plusieurs règles entrent en conflit',
+      'La vitesse de chargement',
+      'Le type de sélecteur',
+      'La taille du fichier'
     ],
-    correctAnswer: 1
+    correctAnswer: 0
   },
   {
     id: '32',
     section: 'CSS',
-    question: 'CSS sert à :',
+    question: 'Quelle est la différence entre margin et padding ?',
     options: [
-      'Structurer',
-      'Styliser',
-      'Programmer',
-      'Sécuriser'
+      'Aucune différence',
+      'Padding est à l\'extérieur',
+      'Margin est à l\'intérieur',
+      'Margin est l\'espace à l\'extérieur d\'un élément, padding est l\'espace à l\'intérieur'
     ],
-    correctAnswer: 1
+    correctAnswer: 3
   },
   {
     id: '33',
     section: 'CSS',
-    question: 'Changer la couleur du texte :',
-    options: ['color', 'background', 'font', 'text'],
-    correctAnswer: 0
+    question: 'Qu\'est-ce que CSS Grid ?',
+    options: [
+      'Un type de fichier',
+      'Un framework JavaScript',
+      'Un type de sélecteur',
+      'Un système de mise en page bidimensionnel pour créer des grilles'
+    ],
+    correctAnswer: 3
   },
   {
     id: '34',
     section: 'CSS',
-    question: 'Responsive design signifie :',
+    question: 'Qu\'est-ce qu\'une media query en CSS ?',
     options: [
-      'Design fixe',
-      'Adapté à tous écrans',
-      'Design lent',
-      'Design mobile seulement'
+      'Une règle qui applique des styles selon les caractéristiques de l\'appareil',
+      'Une requête de base de données',
+      'Un type de sélecteur',
+      'Une propriété de couleur'
     ],
-    correctAnswer: 1
+    correctAnswer: 0
   },
   {
     id: '35',
     section: 'CSS',
-    question: 'Flexbox sert à :',
+    question: 'Quelle est la différence entre position: relative et position: absolute ?',
     options: [
-      'Positionner les éléments',
-      'Créer des images',
-      'Créer des liens',
-      'Écrire du texte'
+      'Aucune différence',
+      'Absolute est toujours relatif',
+      'Relative ne fonctionne pas',
+      'Relative se positionne par rapport à sa position normale, absolute par rapport au parent positionné'
     ],
-    correctAnswer: 0
+    correctAnswer: 3
   },
 
   // =======================
@@ -412,60 +447,60 @@ export const questions: Question[] = [
   {
     id: '36',
     section: 'JavaScript',
-    question: 'JavaScript est :',
+    question: 'Quelle est la différence entre let, const et var en JavaScript ?',
     options: [
-      'Un langage frontend',
-      'Un langage backend uniquement',
-      'Un CMS',
-      'Un serveur'
+      'let et const ont une portée de bloc, var a une portée de fonction. const ne peut pas être réassigné',
+      'Aucune différence',
+      'var est plus moderne',
+      'const peut être réassigné'
     ],
     correctAnswer: 0
   },
   {
     id: '37',
     section: 'JavaScript',
-    question: 'JavaScript sert à :',
+    question: 'Qu\'est-ce qu\'une fonction asynchrone en JavaScript ?',
     options: [
-      'Ajouter de l’interactivité',
-      'Styliser',
-      'Créer base de données',
-      'Héberger un site'
+      'Une fonction qui peut s\'exécuter sans bloquer le reste du code',
+      'Une fonction qui ne fonctionne pas',
+      'Une fonction synchrone',
+      'Une fonction obsolète'
     ],
     correctAnswer: 0
   },
   {
     id: '38',
     section: 'JavaScript',
-    question: 'JavaScript s’exécute :',
+    question: 'Qu\'est-ce qu\'une closure (fermeture) en JavaScript ?',
     options: [
-      'Sur le serveur seulement',
-      'Dans le navigateur',
-      'Dans le CSS',
-      'Dans WordPress uniquement'
-    ],
-    correctAnswer: 1
-  },
-  {
-    id: '39',
-    section: 'JavaScript',
-    question: 'Déclarer une variable :',
-    options: [
-      'let x = 5;',
-      'var = 5;',
-      'int x;',
-      'x := 5'
+      'Une fonction qui a accès aux variables de sa portée externe même après l\'exécution',
+      'Une fonction qui se ferme',
+      'Une variable globale',
+      'Un type de boucle'
     ],
     correctAnswer: 0
   },
   {
+    id: '39',
+    section: 'JavaScript',
+    question: 'Qu\'est-ce que le hoisting en JavaScript ?',
+    options: [
+      'Un type de fonction',
+      'Le comportement où les déclarations sont déplacées en haut de leur portée',
+      'Un type de variable',
+      'Une erreur'
+    ],
+    correctAnswer: 1
+  },
+  {
     id: '40',
     section: 'JavaScript',
-    question: 'JavaScript peut manipuler :',
+    question: 'Qu\'est-ce qu\'une Promise en JavaScript ?',
     options: [
-      'Le DOM',
-      'Le serveur',
-      'La base MySQL',
-      'PHP'
+      'Un objet représentant une opération asynchrone qui peut réussir ou échouer',
+      'Une fonction',
+      'Une variable',
+      'Un type de boucle'
     ],
     correctAnswer: 0
   },
@@ -476,50 +511,60 @@ export const questions: Question[] = [
   {
     id: '41',
     section: 'PHP',
-    question: 'PHP est un langage :',
+    question: 'Quelle est la différence entre == et === en PHP ?',
     options: [
-      'Frontend',
-      'Backend',
-      'Design',
-      'Mobile'
+      '== compare les valeurs, === compare les valeurs et les types',
+      'Aucune différence',
+      '=== compare seulement les types',
+      '== compare les types'
     ],
-    correctAnswer: 1
+    correctAnswer: 0
   },
   {
     id: '42',
     section: 'PHP',
-    question: 'PHP s’exécute :',
+    question: 'Qu\'est-ce qu\'une session PHP ?',
     options: [
-      'Dans le navigateur',
-      'Sur le serveur',
-      'Dans le HTML',
-      'Dans le CSS'
+      'Une variable',
+      'Un mécanisme pour stocker des données utilisateur entre plusieurs pages',
+      'Une fonction',
+      'Un type de fichier'
     ],
     correctAnswer: 1
   },
   {
     id: '43',
     section: 'PHP',
-    question: 'WordPress est écrit en :',
-    options: ['Java', 'PHP', 'Python', 'C++'],
-    correctAnswer: 1
+    question: 'Qu\'est-ce que PDO en PHP ?',
+    options: [
+      'Une interface pour accéder aux bases de données de manière sécurisée',
+      'Une fonction',
+      'Un type de variable',
+      'Un framework'
+    ],
+    correctAnswer: 0
   },
   {
     id: '44',
     section: 'PHP',
-    question: 'Afficher du texte :',
-    options: ['echo', 'print()', 'console.log', 'alert'],
+    question: 'Quelle est la différence entre include et require en PHP ?',
+    options: [
+      'require génère une erreur fatale si le fichier n\'existe pas, include génère un avertissement',
+      'Aucune différence',
+      'include génère une erreur fatale',
+      'require ne génère pas d\'erreur'
+    ],
     correctAnswer: 0
   },
   {
     id: '45',
     section: 'PHP',
-    question: 'PHP communique avec :',
+    question: 'Qu\'est-ce qu\'un namespace en PHP ?',
     options: [
-      'La base de données',
-      'Le CSS',
-      'Le navigateur directement',
-      'HTML seulement'
+      'Un moyen d\'organiser le code et d\'éviter les conflits de noms',
+      'Une fonction',
+      'Une variable',
+      'Un type de fichier'
     ],
     correctAnswer: 0
   },
@@ -530,57 +575,62 @@ export const questions: Question[] = [
   {
     id: '46',
     section: 'WordPress',
-    question: 'WordPress est :',
+    question: 'Quelle est la différence entre WordPress.com et WordPress.org ?',
     options: [
-      'Payant',
-      'Open-source',
-      'Privé',
-      'Un langage'
+      'WordPress.com est hébergé et limité, WordPress.org est auto-hébergé et open-source',
+      'Aucune différence',
+      'WordPress.org est payant',
+      'WordPress.com est open-source'
     ],
-    correctAnswer: 1
+    correctAnswer: 0
   },
   {
     id: '47',
     section: 'WordPress',
-    question: 'Extension WordPress =',
-    options: ['Thème', 'Plugin', 'Fichier', 'Script'],
+    question: 'Qu\'est-ce qu\'un hook dans WordPress ?',
+    options: [
+      'Un plugin',
+      'Un point d\'interception qui permet d\'exécuter du code personnalisé à des moments précis',
+      'Un thème',
+      'Un fichier système'
+    ],
     correctAnswer: 1
   },
   {
     id: '48',
     section: 'WordPress',
-    question: 'Le thème gère :',
+    question: 'Quelle est la différence entre un action hook et un filter hook ?',
     options: [
-      'Le design',
-      'La base',
-      'Le serveur',
-      'La sécurité'
+      'Les actions exécutent du code, les filtres modifient des données',
+      'Aucune différence',
+      'Les filtres exécutent du code',
+      'Les actions modifient des données uniquement'
     ],
     correctAnswer: 0
   },
   {
     id: '49',
     section: 'WordPress',
-    question: 'wp-config.php contient :',
+    question: 'Qu\'est-ce qu\'un custom post type dans WordPress ?',
     options: [
-      'Le design',
-      'Les infos de base de données',
-      'Les images',
-      'Les plugins'
+      'Un type de plugin',
+      'Un type de contenu personnalisé créé pour des besoins spécifiques',
+      'Un thème',
+      'Un fichier système'
     ],
     correctAnswer: 1
   },
   {
     id: '50',
     section: 'WordPress',
-    question: 'wp-admin permet :',
+    question: 'Qu\'est-ce que la taxonomie dans WordPress ?',
     options: [
-      'Voir le site',
-      'Administrer le site',
-      'Changer navigateur',
-      'Installer Windows'
+      'Un système de classification pour organiser le contenu (catégories, étiquettes, etc.)',
+      'Un plugin',
+      'Un thème',
+      'Un type de fichier'
     ],
-    correctAnswer: 1
+    correctAnswer: 0
   },
 
   // =======================
@@ -589,55 +639,60 @@ export const questions: Question[] = [
   {
     id: '51',
     section: 'Révision',
-    question: 'WooCommerce sert à :',
+    question: 'Qu\'est-ce qu\'un CDN (Content Delivery Network) ?',
     options: [
-      'Créer un blog',
-      'Créer une boutique en ligne',
-      'Créer un forum',
-      'Créer un portfolio'
+      'Un réseau de serveurs qui distribue le contenu depuis des emplacements géographiques proches',
+      'Un type de base de données',
+      'Un protocole de communication',
+      'Un type de navigateur'
     ],
-    correctAnswer: 1
+    correctAnswer: 0
   },
   {
     id: '52',
     section: 'Révision',
-    question: 'Un hébergement web est :',
+    question: 'Qu\'est-ce que le minification en développement web ?',
     options: [
-      'Un serveur en ligne',
-      'Un logiciel',
-      'Un navigateur',
-      'Un plugin'
-    ],
-    correctAnswer: 0
-  },
-  {
-    id: '53',
-    section: 'Révision',
-    question: 'Un nom de domaine est :',
-    options: [
-      'Une IP',
-      'Une adresse web',
-      'Un fichier',
-      'Un serveur'
+      'Agrandir les fichiers',
+      'Réduire la taille des fichiers en supprimant les espaces et commentaires inutiles',
+      'Ajouter du code',
+      'Changer les couleurs'
     ],
     correctAnswer: 1
   },
   {
+    id: '53',
+    section: 'Révision',
+    question: 'Qu\'est-ce qu\'un certificat SSL/TLS ?',
+    options: [
+      'Un fichier numérique qui authentifie l\'identité d\'un site et chiffre les données',
+      'Un protocole de transfert',
+      'Un type de serveur',
+      'Un type de base de données'
+    ],
+    correctAnswer: 0
+  },
+  {
     id: '54',
     section: 'Révision',
-    question: 'HTTPS améliore :',
-    options: ['Sécurité', 'Design', 'Vitesse', 'Images'],
-    correctAnswer: 0
+    question: 'Qu\'est-ce que le lazy loading ?',
+    options: [
+      'Charger tout immédiatement',
+      'Supprimer des images',
+      'Une technique qui charge les ressources seulement quand elles sont nécessaires',
+      'Désactiver le cache'
+    ],
+    correctAnswer: 2
   },
   {
     id: '55',
     section: 'Révision',
-    question: 'SEO signifie :',
+    question: 'Qu\'est-ce qu\'un SPA (Single Page Application) ?',
     options: [
-      'Search Engine Optimization',
-      'Secure Email Option',
-      'Site Easy Online',
-      'Search Engine Office'
+      'Une application web qui charge une seule page HTML et met à jour le contenu dynamiquement',
+      'Un site avec plusieurs pages',
+      'Un framework JavaScript',
+      'Un type de serveur'
     ],
     correctAnswer: 0
   },
@@ -648,531 +703,540 @@ export const questions: Question[] = [
   {
     id: '56',
     section: 'Révision',
-    question: 'Un site lent :',
+    question: 'Qu\'est-ce que le versioning (ex: Git) ?',
     options: [
-      'Attire les visiteurs',
-      'Fait fuir les visiteurs',
-      'Améliore Google',
-      'Est normal'
+      'Un type de base de données',
+      'Un système de gestion de versions pour suivre les modifications du code',
+      'Un outil de déploiement',
+      'Un type de serveur'
     ],
     correctAnswer: 1
   },
   {
     id: '57',
     section: 'Révision',
-    question: 'Une sauvegarde sert à :',
+    question: 'Qu\'est-ce qu\'un environnement de développement local ?',
     options: [
-      'Décorer',
-      'Restaurer le site',
-      'Coder',
-      'Publier'
+      'Un environnement de test installé sur votre ordinateur pour développer sans affecter le site en production',
+      'Un serveur en ligne',
+      'Un outil de versioning',
+      'Un type de base de données'
     ],
-    correctAnswer: 1
+    correctAnswer: 0
   },
   {
     id: '58',
     section: 'Révision',
-    question: 'Un plugin inutile :',
+    question: 'Qu\'est-ce que le responsive breakpoint ?',
     options: [
-      'Accélère le site',
-      'Ralentit le site',
-      'Sécurise',
-      'Optimise'
+      'Un point de rupture dans le code',
+      'Un bug',
+      'Un point où le design change pour s\'adapter à une taille d\'écran spécifique',
+      'Un type de média query'
     ],
-    correctAnswer: 1
+    correctAnswer: 2
   },
   {
     id: '59',
     section: 'Révision',
-    question: 'Un thème premium est :',
+    question: 'Qu\'est-ce qu\'un thème enfant WordPress ?',
     options: [
-      'Toujours gratuit',
-      'Souvent payant',
-      'Illégal',
-      'Inutile'
+      'Un thème qui hérite des fonctionnalités d\'un thème parent et permet des modifications sans perdre les mises à jour',
+      'Un thème pour enfants',
+      'Un thème obsolète',
+      'Un type de template'
     ],
-    correctAnswer: 1
+    correctAnswer: 0
   },
   {
     id: '60',
     section: 'Révision',
-    question: 'Un site professionnel doit être :',
+    question: 'Qu\'est-ce que le white screen of death (écran blanc) dans WordPress ?',
     options: [
-      'Rapide et sécurisé',
-      'Lent',
-      'Sans mobile',
-      'Sans contenu'
+      'Un thème blanc',
+      'Une fonction PHP',
+      'Une erreur fatale qui affiche un écran blanc au lieu du site',
+      'Une fonctionnalité normale'
     ],
-    correctAnswer: 0
+    correctAnswer: 2
   },
   {
     id: '61',
     section: 'Révision',
-    question: 'Le cache d’un site sert à :',
+    question: 'Qu\'est-ce qu\'un transients dans WordPress ?',
     options: [
-      'Ralentir le site',
-      'Accélérer le chargement',
-      'Supprimer le site',
-      'Créer des pages'
+      'Un type de post',
+      'Une fonction PHP',
+      'Un type de fichier',
+      'Un mécanisme de cache temporaire pour stocker des données avec expiration'
     ],
-    correctAnswer: 1
+    correctAnswer: 3
   },
   {
     id: '62',
     section: 'Révision',
-    question: 'Un CDN permet :',
+    question: 'Qu\'est-ce que le permalink dans WordPress ?',
     options: [
-      'D’héberger des emails',
-      'D’accélérer un site mondialement',
-      'De coder',
-      'De créer un thème'
+      'Un lien temporaire',
+      'Un type de post',
+      'Une fonction PHP',
+      'L\'URL permanente et lisible d\'une page ou d\'un article'
     ],
-    correctAnswer: 1
+    correctAnswer: 3
   },
   {
     id: '63',
     section: 'Révision',
-    question: 'Un site WordPress peut fonctionner sans thème ?',
-    options: ['Oui', 'Non', 'Seulement en local', 'Uniquement avec PHP'],
-    correctAnswer: 1
+    question: 'Qu\'est-ce qu\'un custom field (champ personnalisé) dans WordPress ?',
+    options: [
+      'Un champ système',
+      'Un type de post',
+      'Une taxonomie',
+      'Un champ de métadonnées personnalisé pour ajouter des informations supplémentaires au contenu'
+    ],
+    correctAnswer: 3
   },
   {
     id: '64',
     section: 'Révision',
-    question: 'Un plugin de sécurité sert à :',
+    question: 'Qu\'est-ce que le loop WordPress ?',
     options: [
-      'Ajouter des images',
-      'Protéger le site',
-      'Changer le design',
-      'Créer des pages'
+      'Une boucle infinie',
+      'Un type de post',
+      'Une fonction PHP',
+      'Le code PHP qui affiche les articles WordPress'
     ],
-    correctAnswer: 1
+    correctAnswer: 3
   },
   {
     id: '65',
     section: 'Révision',
-    question: 'Une mise à jour WordPress sert à :',
+    question: 'Qu\'est-ce qu\'un widget area dans WordPress ?',
     options: [
-      'Ajouter des bugs',
-      'Améliorer sécurité et performances',
-      'Supprimer le site',
-      'Changer le logo'
+      'Un type de post',
+      'Une fonction PHP',
+      'Un type de fichier',
+      'Une zone prédéfinie où on peut ajouter des widgets'
     ],
-    correctAnswer: 1
+    correctAnswer: 3
   },
   {
     id: '66',
     section: 'Révision',
-    question: 'Le fichier .htaccess sert à :',
+    question: 'Qu\'est-ce que le REST API de WordPress ?',
     options: [
-      'Gérer les règles serveur',
-      'Créer du design',
-      'Stocker images',
-      'Écrire HTML'
+      'Un type de post',
+      'Une fonction PHP',
+      'Un type de base de données',
+      'Une interface qui permet d\'accéder aux données WordPress via HTTP'
     ],
-    correctAnswer: 0
+    correctAnswer: 3
   },
   {
     id: '67',
     section: 'Révision',
-    question: 'Un constructeur de pages est :',
-    options: ['Elementor', 'PHP', 'MySQL', 'Apache'],
-    correctAnswer: 0
+    question: 'Qu\'est-ce qu\'un nonce dans WordPress ?',
+    options: [
+      'Un type de post',
+      'Une fonction PHP',
+      'Un type de fichier',
+      'Un token de sécurité pour protéger les formulaires contre les attaques CSRF'
+    ],
+    correctAnswer: 3
   },
   {
     id: '68',
     section: 'Révision',
-    question: 'Elementor est :',
+    question: 'Qu\'est-ce que le multisite WordPress ?',
     options: [
-      'Un thème',
-      'Un plugin',
-      'Un langage',
-      'Un serveur'
+      'Un type de post',
+      'Une fonction PHP',
+      'Un type de serveur',
+      'Une fonctionnalité qui permet de gérer plusieurs sites depuis une seule installation'
     ],
-    correctAnswer: 1
+    correctAnswer: 3
   },
   {
     id: '69',
     section: 'Révision',
-    question: 'La base de données WordPress est :',
-    options: ['MongoDB', 'PostgreSQL', 'MySQL', 'SQLite'],
-    correctAnswer: 2
+    question: 'Qu\'est-ce qu\'un cron job dans WordPress ?',
+    options: [
+      'Un type de post',
+      'Une fonction PHP',
+      'Un type de fichier',
+      'Une tâche planifiée qui s\'exécute automatiquement à intervalles réguliers'
+    ],
+    correctAnswer: 3
   },
   {
     id: '70',
     section: 'Révision',
-    question: 'phpMyAdmin sert à :',
+    question: 'Qu\'est-ce que le object caching dans WordPress ?',
     options: [
-      'Gérer la base de données',
-      'Créer des pages',
-      'Installer WordPress',
-      'Modifier le thème'
+      'Un plugin de cache',
+      'Une fonction PHP',
+      'Un type de base de données',
+      'Un système qui stocke les objets PHP en mémoire pour accélérer les requêtes'
     ],
-    correctAnswer: 0
+    correctAnswer: 3
   },
-
   {
     id: '71',
     section: 'Révision',
-    question: 'Un shortcode WordPress est :',
+    question: 'Qu\'est-ce qu\'un customizer dans WordPress ?',
     options: [
-      'Un petit code entre crochets',
-      'Un plugin',
-      'Un thème',
-      'Une page'
+      'Un type de post',
+      'Une fonction PHP',
+      'Un type de fichier',
+      'L\'interface qui permet de personnaliser le thème en temps réel'
     ],
-    correctAnswer: 0
+    correctAnswer: 3
   },
   {
     id: '72',
     section: 'Révision',
-    question: 'Gutenberg est :',
+    question: 'Qu\'est-ce qu\'un template hierarchy dans WordPress ?',
     options: [
-      'L’éditeur WordPress',
-      'Un thème',
-      'Un plugin',
-      'Un serveur'
+      'Un type de post',
+      'Une fonction PHP',
+      'Un type de base de données',
+      'Le système qui détermine quel fichier de template utiliser pour afficher le contenu'
     ],
-    correctAnswer: 0
+    correctAnswer: 3
   },
   {
     id: '73',
     section: 'Révision',
-    question: 'Un widget sert à :',
+    question: 'Qu\'est-ce qu\'un meta box dans WordPress ?',
     options: [
-      'Ajouter du contenu',
-      'Gérer la base',
-      'Créer un thème',
-      'Coder PHP'
+      'Un type de post',
+      'Une fonction PHP',
+      'Un type de fichier',
+      'Une boîte personnalisée dans l\'éditeur pour ajouter des champs supplémentaires'
     ],
-    correctAnswer: 0
+    correctAnswer: 3
   },
   {
     id: '74',
     section: 'Révision',
-    question: 'Le menu WordPress permet :',
+    question: 'Qu\'est-ce que le query string dans une URL ?',
     options: [
-      'Créer la navigation',
-      'Supprimer WordPress',
-      'Gérer le serveur',
-      'Créer la base'
+      'Une partie du nom de domaine',
+      'Un protocole HTTP',
+      'Un type de serveur',
+      'La partie après le ? qui contient des paramètres (ex: ?page=2)'
     ],
-    correctAnswer: 0
+    correctAnswer: 3
   },
   {
     id: '75',
     section: 'Révision',
-    question: 'Un article WordPress est :',
+    question: 'Qu\'est-ce qu\'un Sitemap XML ?',
     options: [
-      'Contenu dynamique',
-      'Page système',
-      'Plugin',
-      'Thème'
+      'Un plan du site visuel',
+      'Un protocole de communication',
+      'Un type de serveur',
+      'Un fichier XML qui liste les pages d\'un site pour les moteurs de recherche'
     ],
-    correctAnswer: 0
+    correctAnswer: 3
   },
-
   {
     id: '76',
     section: 'Révision',
-    question: 'Une page WordPress est :',
+    question: 'Qu\'est-ce que le CORS (Cross-Origin Resource Sharing) ?',
     options: [
-      'Contenu statique',
-      'Toujours dynamique',
-      'Un plugin',
-      'Un thème'
+      'Un type de base de données',
+      'Un protocole de sécurité',
+      'Un type de serveur',
+      'Un mécanisme qui permet à un site d\'accéder à des ressources d\'un autre domaine'
     ],
-    correctAnswer: 0
+    correctAnswer: 3
   },
   {
     id: '77',
     section: 'Révision',
-    question: 'Les catégories servent à :',
+    question: 'Qu\'est-ce qu\'un webhook ?',
     options: [
-      'Classer les articles',
-      'Créer le design',
-      'Sécuriser',
-      'Optimiser serveur'
+      'Un protocole HTTP',
+      'Un type de serveur',
+      'Un type de fichier',
+      'Un mécanisme qui envoie des données à une URL quand un événement se produit'
     ],
-    correctAnswer: 0
+    correctAnswer: 3
   },
   {
     id: '78',
     section: 'Révision',
-    question: 'Les étiquettes servent à :',
+    question: 'Qu\'est-ce que le progressive enhancement ?',
     options: [
-      'Décrire le contenu',
-      'Changer thème',
-      'Créer pages',
-      'Bloquer utilisateurs'
+      'Une technique qui améliore progressivement',
+      'Un framework CSS',
+      'Un type de serveur',
+      'Une approche qui commence par une base fonctionnelle et ajoute des améliorations progressives'
     ],
-    correctAnswer: 0
+    correctAnswer: 3
   },
   {
     id: '79',
     section: 'Révision',
-    question: 'Un utilisateur WordPress peut avoir :',
+    question: 'Qu\'est-ce qu\'un polyfill en JavaScript ?',
     options: [
-      'Un rôle',
-      'Une IP',
-      'Un plugin',
-      'Un thème'
+      'Un type de variable',
+      'Un framework',
+      'Un type de serveur',
+      'Un code qui fournit une fonctionnalité manquante dans les anciens navigateurs'
     ],
-    correctAnswer: 0
+    correctAnswer: 3
   },
   {
     id: '80',
     section: 'Révision',
-    question: 'Administrateur WordPress peut :',
+    question: 'Qu\'est-ce que le tree shaking en JavaScript ?',
     options: [
-      'Tout gérer',
-      'Publier seulement',
-      'Lire uniquement',
-      'Modifier profil'
+      'Un type de boucle',
+      'Un framework',
+      'Un type de variable',
+      'Une technique qui supprime le code inutilisé lors de la compilation'
     ],
-    correctAnswer: 0
+    correctAnswer: 3
   },
-
   {
     id: '81',
     section: 'Révision',
-    question: 'Un éditeur peut :',
+    question: 'Qu\'est-ce qu\'un service worker ?',
     options: [
-      'Gérer le site entier',
-      'Publier et modifier contenus',
-      'Installer plugins',
-      'Supprimer WordPress'
+      'Un framework JavaScript',
+      'Un type de variable',
+      'Un type de serveur',
+      'Un script qui fonctionne en arrière-plan et permet des fonctionnalités hors ligne'
     ],
-    correctAnswer: 1
+    correctAnswer: 3
   },
   {
     id: '82',
     section: 'Révision',
-    question: 'Un auteur peut :',
+    question: 'Qu\'est-ce que le JAMstack ?',
     options: [
-      'Créer et publier ses articles',
-      'Installer thèmes',
-      'Gérer utilisateurs',
-      'Accéder serveur'
+      'Un framework JavaScript',
+      'Un protocole de communication',
+      'Un type de base de données',
+      'Une architecture web basée sur JavaScript, APIs et Markup'
     ],
-    correctAnswer: 0
+    correctAnswer: 3
   },
   {
     id: '83',
     section: 'Révision',
-    question: 'Un contributeur peut :',
+    question: 'Qu\'est-ce qu\'un microservice ?',
     options: [
-      'Soumettre sans publier',
-      'Publier directement',
-      'Supprimer plugins',
-      'Modifier thème'
+      'Un petit framework',
+      'Un type de base de données',
+      'Un type de serveur',
+      'Une architecture où une application est composée de petits services indépendants'
     ],
-    correctAnswer: 0
+    correctAnswer: 3
   },
   {
     id: '84',
     section: 'Révision',
-    question: 'Un abonné peut :',
+    question: 'Qu\'est-ce que le CI/CD (Continuous Integration/Continuous Deployment) ?',
     options: [
-      'Lire et commenter',
-      'Publier',
-      'Administrer',
-      'Coder'
+      'Un type de base de données',
+      'Un outil de versioning',
+      'Un type de serveur',
+      'Des pratiques qui automatisent le test et le déploiement du code'
     ],
-    correctAnswer: 0
+    correctAnswer: 3
   },
   {
     id: '85',
     section: 'Révision',
-    question: 'Un backup automatique est :',
+    question: 'Qu\'est-ce qu\'un container (Docker) ?',
     options: [
-      'Recommandé',
-      'Inutile',
-      'Dangereux',
-      'Interdit'
+      'Un type de fichier',
+      'Un framework',
+      'Un type de serveur',
+      'Une unité logicielle qui encapsule une application et ses dépendances'
     ],
-    correctAnswer: 0
+    correctAnswer: 3
   },
-
   {
     id: '86',
     section: 'Révision',
-    question: 'Un staging est :',
+    question: 'Qu\'est-ce que le serverless ?',
     options: [
-      'Copie de test du site',
-      'Un plugin',
-      'Un thème',
-      'Un hébergement'
+      'Sans serveur',
+      'Un framework',
+      'Un type de base de données',
+      'Une architecture où le code s\'exécute sans gérer de serveur (ex: AWS Lambda)'
     ],
-    correctAnswer: 0
+    correctAnswer: 3
   },
   {
     id: '87',
     section: 'Révision',
-    question: 'Le mode maintenance sert à :',
+    question: 'Qu\'est-ce que le GraphQL ?',
     options: [
-      'Bloquer temporairement le site',
-      'Supprimer données',
-      'Changer hébergeur',
-      'Optimiser SEO'
+      'Un type de base de données',
+      'Un protocole de communication',
+      'Un framework CSS',
+      'Un langage de requête pour APIs qui permet de demander exactement les données nécessaires'
     ],
-    correctAnswer: 0
+    correctAnswer: 3
   },
   {
     id: '88',
     section: 'Révision',
-    question: 'Un child theme sert à :',
+    question: 'Qu\'est-ce que le WebAssembly (WASM) ?',
     options: [
-      'Modifier sans perdre mises à jour',
-      'Accélérer site',
-      'Sécuriser',
-      'Changer base'
+      'Un langage de programmation',
+      'Un framework JavaScript',
+      'Un type de serveur',
+      'Un format binaire qui permet d\'exécuter du code à haute performance dans le navigateur'
     ],
-    correctAnswer: 0
+    correctAnswer: 3
   },
   {
     id: '89',
     section: 'Révision',
-    question: 'FTP sert à :',
+    question: 'Qu\'est-ce que le OAuth ?',
     options: [
-      'Transférer fichiers',
-      'Créer pages',
-      'Naviguer web',
-      'Gérer emails'
+      'Un type de base de données',
+      'Un protocole de sécurité',
+      'Un type de serveur',
+      'Un protocole d\'autorisation qui permet d\'accéder à des ressources sans partager le mot de passe'
     ],
-    correctAnswer: 0
+    correctAnswer: 3
   },
   {
     id: '90',
     section: 'Révision',
-    question: 'FileZilla est :',
+    question: 'Qu\'est-ce que le JWT (JSON Web Token) ?',
     options: [
-      'Client FTP',
-      'Serveur',
-      'Plugin',
-      'CMS'
+      'Un type de fichier',
+      'Un protocole HTTP',
+      'Un type de serveur',
+      'Un format compact pour transmettre des informations de manière sécurisée'
     ],
-    correctAnswer: 0
+    correctAnswer: 3
   },
-
   {
     id: '91',
     section: 'Révision',
-    question: 'Un hébergement mutualisé est :',
+    question: 'Qu\'est-ce que le rate limiting ?',
     options: [
-      'Partagé entre plusieurs sites',
-      'Dédié',
-      'Local',
-      'Hors ligne'
+      'Un type de cache',
+      'Un protocole HTTP',
+      'Un type de serveur',
+      'Une technique qui limite le nombre de requêtes qu\'un utilisateur peut faire'
     ],
-    correctAnswer: 0
+    correctAnswer: 3
   },
   {
     id: '92',
     section: 'Révision',
-    question: 'Un VPS est :',
+    question: 'Qu\'est-ce que le load balancing ?',
     options: [
-      'Serveur virtuel',
-      'Un thème',
-      'Un plugin',
-      'Un navigateur'
+      'Un type de base de données',
+      'Un protocole de communication',
+      'Un type de cache',
+      'La distribution du trafic entre plusieurs serveurs pour améliorer les performances'
     ],
-    correctAnswer: 0
+    correctAnswer: 3
   },
   {
     id: '93',
     section: 'Révision',
-    question: 'Une IP est :',
+    question: 'Qu\'est-ce que le database indexing ?',
     options: [
-      'Adresse serveur',
-      'Plugin',
-      'Thème',
-      'Langage'
+      'Un type de plugin',
+      'Un thème',
+      'Un type de serveur',
+      'Une structure qui accélère les recherches dans une base de données'
     ],
-    correctAnswer: 0
+    correctAnswer: 3
   },
   {
     id: '94',
     section: 'Révision',
-    question: 'DNS sert à :',
+    question: 'Qu\'est-ce que le ACID dans les bases de données ?',
     options: [
-      'Relier domaine et serveur',
-      'Créer pages',
-      'Sécuriser WordPress',
-      'Créer emails'
+      'Un type de base de données',
+      'Un plugin',
+      'Un thème',
+      'Un ensemble de propriétés (Atomicity, Consistency, Isolation, Durability) garantissant la fiabilité'
     ],
-    correctAnswer: 0
+    correctAnswer: 3
   },
   {
     id: '95',
     section: 'Révision',
-    question: 'Une base de données stocke :',
+    question: 'Qu\'est-ce que le SQL injection ?',
     options: [
-      'Les informations du site',
-      'Les images seulement',
-      'Le thème',
-      'Le CSS'
+      'Un type de requête',
+      'Un plugin de sécurité',
+      'Un type de base de données',
+      'Une attaque qui insère du code SQL malveillant dans une requête'
     ],
-    correctAnswer: 0
+    correctAnswer: 3
   },
-
   {
     id: '96',
     section: 'Révision',
-    question: 'MySQL est :',
+    question: 'Qu\'est-ce que le XSS (Cross-Site Scripting) ?',
     options: [
-      'Une base de données',
-      'Un langage design',
-      'Un CMS',
-      'Un serveur'
+      'Un type de CSS',
+      'Un plugin WordPress',
+      'Un type de serveur',
+      'Une attaque qui injecte du code JavaScript malveillant dans une page web'
     ],
-    correctAnswer: 0
+    correctAnswer: 3
   },
   {
     id: '97',
     section: 'Révision',
-    question: 'Un mot de passe fort contient :',
+    question: 'Qu\'est-ce que le CSRF (Cross-Site Request Forgery) ?',
     options: [
-      'Lettres, chiffres et symboles',
-      'Seulement chiffres',
-      'Seulement lettres',
-      'Prénom'
+      'Un type de cache',
+      'Un plugin de sécurité',
+      'Un type de serveur',
+      'Une attaque qui force un utilisateur à exécuter des actions non désirées'
     ],
-    correctAnswer: 0
+    correctAnswer: 3
   },
   {
     id: '98',
     section: 'Révision',
-    question: 'Le HTTPS nécessite :',
+    question: 'Qu\'est-ce que le hashing de mot de passe ?',
     options: [
-      'Certificat SSL',
-      'Plugin',
-      'Thème',
-      'PHP'
+      'Stocker le mot de passe en clair',
+      'Un plugin',
+      'Un thème',
+      'Transformer un mot de passe en une chaîne irréversible pour la sécurité'
     ],
-    correctAnswer: 0
+    correctAnswer: 3
   },
   {
     id: '99',
     section: 'Révision',
-    question: 'Un site doit être sauvegardé :',
+    question: 'Qu\'est-ce que le progressive web app (PWA) ?',
     options: [
-      'Régulièrement',
-      'Une seule fois',
-      'Jamais',
-      'Après bug'
+      'Un type de plugin',
+      'Un thème WordPress',
+      'Un type de serveur',
+      'Une application web qui fonctionne comme une application native'
     ],
-    correctAnswer: 0
+    correctAnswer: 3
   },
   {
     id: '100',
     section: 'Révision',
-    question: 'WordPress est adapté pour :',
+    question: 'Qu\'est-ce que le headless CMS ?',
     options: [
-      'Blog',
-      'Site vitrine',
-      'E-commerce',
-      'Toutes ces réponses'
+      'Un CMS sans interface',
+      'Un CMS qui ne fonctionne pas',
+      'Un CMS uniquement pour mobile',
+      'Un CMS où le backend de gestion de contenu est séparé du frontend de présentation'
     ],
     correctAnswer: 3
   }

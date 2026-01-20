@@ -27,7 +27,7 @@ export default function ResultsPage() {
 
     const parsedResults = JSON.parse(storedResults) as TestResults;
     setResults(parsedResults);
-    setHasPassed(parsedResults.score >= 60);
+    setHasPassed(parsedResults.score >= 80);
   }, [router]);
 
   const handleRetake = () => {
@@ -48,8 +48,8 @@ export default function ResultsPage() {
     );
   }
 
-  const scoreColor = results.score >= 60 ? 'var(--success-color)' : 'var(--danger-color)';
-  const scoreEmoji = results.score >= 60 ? '✅' : '❌';
+  const scoreColor = results.score >= 80 ? 'var(--success-color)' : 'var(--danger-color)';
+  const scoreEmoji = results.score >= 80 ? '✅' : '❌';
 
   // Grouper les questions par section
   const questionsBySection = sections.map((section) => ({
@@ -92,7 +92,7 @@ export default function ResultsPage() {
           }}>
             {hasPassed 
               ? 'Félicitations ! Vous avez réussi le test.' 
-              : 'Vous n\'avez pas atteint le score minimum de 60%. Vous pouvez recommencer.'}
+              : 'Vous n\'avez pas atteint le score minimum de 80%. Vous pouvez recommencer.'}
           </p>
           <div style={{ 
             background: '#f3f4f6', 
@@ -262,7 +262,7 @@ export default function ResultsPage() {
               color: 'var(--text-secondary)',
               marginBottom: '1.5rem'
             }}>
-              Vous devez obtenir au moins 60% pour passer. Vous pouvez recommencer le test.
+              Vous devez obtenir au moins 80% pour passer. Vous pouvez recommencer le test.
             </p>
           )}
           <button 
